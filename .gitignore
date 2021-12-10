@@ -4,3 +4,5 @@ models/
 ./src/results/insight_model_model-r50-am-lfw_112.h5.csv
 ./src/results/insight_model_model-r100-ii_112.h5.csv
 ./src/embeddings
+/environment/
+/environment38/

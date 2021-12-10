@@ -4,7 +4,12 @@ import numpy as np
 import mxnet as mx
 from mxnet import ndarray as nd
 import cv2
-sys.path.append("../backbones/mxnet-SSH")
+ 
+import os
+#sys.path.append("../backbones/mxnet-SSH")
+path = os.path.join(os.path.dirname(__file__), os.pardir, "backbones", "mxnet-SSH")
+sys.path.append(path)    
+
 from rcnn.config import config
 from rcnn.processing.bbox_transform import nonlinear_pred, clip_boxes
 from rcnn.processing.generate_anchor import generate_anchors_fpn, anchors_plane
